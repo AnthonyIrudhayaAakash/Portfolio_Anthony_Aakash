@@ -1,16 +1,25 @@
-// tailwind.config.js
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./*.html'],
+  content: [
+    "./src/**/*.{html,js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
-      fontFamily: {
-        poetsen: ['"Poetsen One"', 'sans-serif'],
+      colors:{
+        primary:'#232946',
+        secondary:'#EEBBC3'
       },
-      colors: {
-        'primary-color': '#161c38',  
-        'secondary-color': '#FFFFFE'
+
+      backgroundColor:{
+        primary:'#232946',
+        secondary:'#EEBBC2',
+        white:'#FFFFFE'
       },
+      fontFamily:{
+        Montserrat : ["Montserrat", "sans-serif"]
+      }
     },
   },
   plugins: [],
 }
+

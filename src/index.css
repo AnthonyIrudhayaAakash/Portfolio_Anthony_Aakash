@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-item{
+    @apply px-6 py-2;
+    @apply  text-white font-Montserrat text-2xl rounded-xl transition-all ease-in-out duration-300;
+    @apply hover:bg-secondary hover:text-primary;
+
+}
