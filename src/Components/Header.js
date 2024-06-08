@@ -1,6 +1,6 @@
 import ScrollReveal from "scrollreveal";
 import { useEffect } from "react";
-import Profile from "./Profile";
+import Body from "./Body";
 const Header = () => {
     useEffect(()=>{
 
@@ -15,27 +15,30 @@ const Header = () => {
 
 
     return(
-        
-        
-            <header>
-                <div className="grid grid-rows-2 justify-items-center place-items-center sm:flex justify-between">
+        <>
+        <header className="title-nav-links">
+                <div className="grid grid-rows-2 items-center justify-center place-items-center sm:flex sm:justify-between">
+                    
                     <div className="title">
                         <h1 className=" text-white font-Montserrat text-4xl font-semibold px-2 py-4 reveal">Portfolio</h1>
                     </div>
 
-                    <nav>
+                    <nav className="nav-links">
                         <ul className="reveal flex justify-evenly sm:justify-around">
-                            <a href=""><li className="nav-item">Project</li></a>
+                            {/*Redirected to Project Section of Page */}
+                            <a href="#first-project"><li className="nav-item">Project</li></a>
                             <a href=""><li className="nav-item">Blogs</li></a>
-                            {/* <a href=""><li className="nav-item">About</li></a> */}
                             <a href=""><li className="nav-item">Contact</li></a>
                         </ul>
                     </nav>
+
                 </div>
-                <Profile/>
-                {/* <img src="https://res.cloudinary.com/diabo4gpn/image/upload/abrl95vf7jcjxn6oamtw.jpg" width={360} height={1440} className=" rounded-2xl reveal"></img> */}
-      
-            </header>
+        </header>
+        <Body/>
+        </>
+        
+        
+            
             
         
 
