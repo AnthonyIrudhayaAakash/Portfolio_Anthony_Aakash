@@ -20,15 +20,14 @@ const Header = () => {
                 <div className="grid grid-rows-2 items-center justify-center place-items-center sm:flex sm:justify-between">
                     
                     <div className="title">
-                        <h1 className=" text-white font-Montserrat text-4xl font-semibold px-2 py-4 reveal">Portfolio</h1>
+                        <h1 className="text-4xl reveal">Portfolio</h1>
                     </div>
-
                     <nav className="nav-links">
                         <ul className="reveal flex justify-evenly sm:justify-around">
                             {/*Redirected to Project Section of Page */}
-                            <a href="#first-project"><li className="nav-item">Project</li></a>
-                            <a href=""><li className="nav-item">Blogs</li></a>
-                            <a href=""><li className="nav-item">Contact</li></a>
+                            <a href="#project-one"><li className="nav-item">Project</li></a>
+                            <a href="#blog-cards"><li className="nav-item">Blogs</li></a>
+                            <a href="#contact"><li className="nav-item">Contact</li></a>
                         </ul>
                     </nav>
 

@@ -8,6 +8,7 @@ module.exports = {
       colors:{
         primary:'#232946',
         secondary:'#EEBBC3',
+        card_bg:'#B8C1EC',
       },
 
       backgroundColor:{
@@ -21,6 +22,9 @@ module.exports = {
       },
       fontFamily:{
         Montserrat : ["Montserrat", "sans-serif"]
+      },
+      rotate:{
+        '360' : "360deg"
       }
     },
   },

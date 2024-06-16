@@ -8,4 +8,13 @@
     @apply hover:bg-secondary hover:text-primary;
 
 }
+h1{
+    @apply text-white font-Montserrat text-3xl font-semibold px-2 py-4;
+}
+h2{
+    @apply text-primary text-center font-sans text-lg font-bold py-2;
+}
 
+.blog-links{
+    @apply text-center w-fit px-8 py-2 mt-2 rounded-xl bg-primary text-secondary transition-all duration-150 ease-in-out hover:scale-110;
+}

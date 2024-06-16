@@ -1,8 +1,9 @@
 import Profile from "./Profile";
 import Project from "./Project";
 import Blogs from "./Blogs";
+import Contact from "./Contact.js";
 import { useState } from "react";
-import projectDetails from "../../config/data";
+import { blogDetails, projectDetails, contactDetails } from "../../config/data.js"
 const Body = () =>{
     const [firstHoverState, setFirstHoverState] = useState(false);
     const [secondHoverState, setSecondHoverState] = useState(false);
@@ -23,9 +24,12 @@ const Body = () =>{
         <>
         <main className="page-content">
             <Profile/>
-            <Project data = {projectsWithHandlers} key={projectsWithHandlers?.project_Name}/>
-            <Blogs/>
+            <Project data = {projectsWithHandlers}/>
+            <Blogs data={blogDetails}/>
         </main>
+        <footer>
+            <Contact data={contactDetails}/>
+        </footer>
         </>
     )
 }
